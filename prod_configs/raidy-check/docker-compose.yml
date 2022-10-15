@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+  raidy_check_discord_bot:
+    container_name: raidy_check_discord_bot
+    image: ghcr.io/drakumus/raidy-check-image:latest
+    restart: always
+    env_file: .env
+    init: true
+  

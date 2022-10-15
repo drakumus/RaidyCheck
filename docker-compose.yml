@@ -1,0 +1,10 @@
+version: '4.0'
+services:
+  raidy_check_discord_bot:
+    container_name: raidy_check_discord_bot
+    build:
+      # defines build parameters. Not necessary because we have everything in root at the moment
+      dockerfile: ./Dockerfile
+      context: .
+    # restart: always
+    env_file: ./.env
