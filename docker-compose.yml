@@ -6,5 +6,5 @@ services:
       # defines build parameters. Not necessary because we have everything in root at the moment
       dockerfile: ./Dockerfile
       context: .
-    # restart: always
+    restart: always
     env_file: ./.env
